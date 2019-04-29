@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native'
-
 const ToggleStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',

@@ -5,7 +5,6 @@ import AsyncStorage from '@react-native-community/async-storage'
 import PropTypes from 'prop-types'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import styles from './FullImage.styles'
-
 class FullImage extends Component {
   constructor(props) {
     super(props)
@@ -86,9 +85,7 @@ class FullImage extends Component {
     )
   }
 }
-
 FullImage.propTypes = {
   navigation: PropTypes.object.isRequired
 }
-
 export default withNavigation(FullImage)

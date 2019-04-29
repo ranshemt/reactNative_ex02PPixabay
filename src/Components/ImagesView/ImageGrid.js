@@ -3,7 +3,6 @@ import { Image, FlatList, TouchableOpacity } from 'react-native'
 import { withNavigation } from 'react-navigation'
 import PropTypes from 'prop-types'
 import styles from './ImagesView.styles'
-
 const GridImage = props => {
   return (
     <FlatList

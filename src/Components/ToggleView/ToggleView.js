@@ -3,7 +3,6 @@ import { View, Text } from 'react-native'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-
 import ToggleViewActions from './ToggleView.act'
 import ToggleStyles from './ToggleView.styles'
 
@@ -45,7 +44,6 @@ ToggleView.propTypes = {
   actions: PropTypes.objectOf(PropTypes.object),
   mode: PropTypes.string.isRequired
 }
-
 export default connect(
   mapStateToProps,
   mapDispatchToProps

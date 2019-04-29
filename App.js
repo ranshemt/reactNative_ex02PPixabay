@@ -6,7 +6,6 @@ import AppStyles from './App.styles'
 import SearchScreen from './src/Components/0SearchScreen'
 import Favorites from './src/Components/1Favorites'
 import FullImageScreen from './src/Components/FullImage/FullImage'
-//https://drive.google.com/file/d/1vmdCnmv3uVJjcTXVJ2oXH7vzNotfbOd2/view
 const MainNav = createStackNavigator(
   {
     SearchScreen: {

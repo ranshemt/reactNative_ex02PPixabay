@@ -2,16 +2,13 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-
 import styles from './ImagesView.styles'
 import ImageGrid from './ImageGrid'
 import ImageList from './ImageList'
-
 const mapStateToProps = ({ ToggleReducer, SearchReducer }) => ({
   mode: ToggleReducer.mode,
   images: SearchReducer.results
 })
-
 const ImagesView = props => {
   return (
     <View>
@@ -23,12 +20,10 @@ const ImagesView = props => {
     </View>
   )
 }
-
 ImagesView.propTypes = {
   mode: PropTypes.string.isRequired,
   images: PropTypes.arrayOf(PropTypes.object)
 }
-
 export default connect(
   mapStateToProps,
   () => ({})

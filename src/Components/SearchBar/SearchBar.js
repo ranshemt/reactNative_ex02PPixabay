@@ -3,10 +3,8 @@ import { View, TextInput } from 'react-native'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-
 import SearchBarActions from './SearchBar.act'
 import SearchBarStyles from './SearchBar.styles'
-
 const mapStateToProps = ({ SearchReducer }) => ({
   query: SearchReducer.query
 })
@@ -15,7 +13,6 @@ const mapDispatchToProps = dispatch => ({
     SearchBarActions: bindActionCreators(SearchBarActions, dispatch)
   }
 })
-
 const SearchBar = props => {
   return (
     <View style={SearchBarStyles.container}>
@@ -29,12 +26,10 @@ const SearchBar = props => {
     </View>
   )
 }
-
 SearchBar.propTypes = {
   actions: PropTypes.objectOf(PropTypes.object),
   query: PropTypes.string
 }
-
 export default connect(
   mapStateToProps,
   mapDispatchToProps

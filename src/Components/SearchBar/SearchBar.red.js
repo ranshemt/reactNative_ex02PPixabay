@@ -4,7 +4,6 @@ import {
   FETCH_IMAGES_SUCCESS,
   FETCH_IMAGES_FAILURE
 } from './SearchBar.act.types'
-
 const initialState = {
   query: '',
   loading: false,
@@ -12,7 +11,6 @@ const initialState = {
   amountCurrQuery: -1,
   results: []
 }
-
 export default (state = initialState, action) => {
   switch (action.type) {
     case ON_CHANGE:

@@ -1,9 +1,7 @@
-import { TOGGLE_VIEW } from './ToggleView.act.types'
-
+import TOGGLE_VIEW from './ToggleView.act.types'
 const initialState = {
   mode: 'grid'
 }
-
 export default (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_VIEW:

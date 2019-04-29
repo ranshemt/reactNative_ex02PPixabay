@@ -4,7 +4,7 @@ import {
   FETCH_IMAGES_SUCCESS,
   FETCH_IMAGES_FAILURE
 } from './SearchBar.act.types'
-import { API_KEY } from '../../../consts'
+import API_KEY from '../../../consts'
 
 const onChange = query => ({
   type: ON_CHANGE,
